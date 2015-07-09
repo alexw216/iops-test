@@ -1,0 +1,5 @@
+#!/bin/bash
+iostat 1 >> /root/iostat-results
+
+
+

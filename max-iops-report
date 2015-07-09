@@ -1,0 +1,2 @@
+#!/bin/bash
+cat iostat-results | grep xvd* | awk '{print $2}' | sort -rn | head -1

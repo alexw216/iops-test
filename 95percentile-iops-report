@@ -1,0 +1,2 @@
+#!/bin/bash
+cat iostat-results | grep xvd* | awk 'BEGIN{i=0} {s[i]=$2; i++;} END{print s[int(NR*0.95-0.5)]}'
